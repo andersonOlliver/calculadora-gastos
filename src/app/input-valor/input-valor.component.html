@@ -1,0 +1,7 @@
+<div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Informe o valor da receita" aria-label="Informe a receita" aria-describedby="basic-addon2"
+    currencyMask [(ngModel)]="valorReceita" [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',' }">
+    <div class="input-group-append">
+      <button class="btn btn-outline-primary" type="button" (click)="calcularMetodo()">Calcular</button>
+    </div>
+  </div>
