@@ -14,14 +14,11 @@ export class AppComponent implements OnInit {
   valorDespesaEducacao: number;
   valorDespesaAleatoria: number;
 
-  title = 'app';
 
   ngOnInit(): void {
   }
-  // 70
 
   calcular(valorReceita) {
-    console.log(valorReceita);
     this.valorGasto = this.getPercentual(valorReceita, 70);
     this.valorInvestimento = this.getPercentual(valorReceita, 30);
 

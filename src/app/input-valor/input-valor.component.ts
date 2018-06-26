@@ -12,12 +12,11 @@ export class InputValorComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.valorReceita = 4100;
-    this.calcularMetodo();
+    // this.valorReceita = 4100;
+    // this.calcularMetodo();
   }
 
   calcularMetodo() {
-    console.log(this.valorReceita);
     this.calcular.emit(this.valorReceita);
   }
 }
